@@ -5,7 +5,7 @@ import Entities.Entity;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBCollection;
 
-public class Update<T extends Entity> extends FilterCrud<Delete<T>> {
+public class Update<T extends Entity> extends FilterCrud<Update<T>> {
     private BasicDBObject setQuery = new BasicDBObject();
     private String collectionName;
 

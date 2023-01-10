@@ -11,7 +11,7 @@ import com.mongodb.DBObject;
 import java.io.IOException;
 import java.util.List;
 
-public class Find<T extends Entity> extends FilterCrud<Delete<T>> {
+public class Find<T extends Entity> extends FilterCrud<Find<T>> {
     private String collectionName;
     private BasicDBObject projectQuery = new BasicDBObject();
     private BasicDBObject sortQuery = new BasicDBObject();
